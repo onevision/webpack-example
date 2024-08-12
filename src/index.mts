@@ -1,5 +1,4 @@
-// Importing functions from mathFunctions.mjs
-import { add, subtract, multiply, divide } from "./mathFunctions.mjs";
+import { add, subtract, multiply, divide } from "./mathFunctions";
 
 const a = 10;
 const b = 5;

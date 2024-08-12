@@ -1,27 +1,22 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/index.mjs", // Your entry point
-  output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist"),
-  },
   mode: "production",
+  entry: "./src/index.mts",
   module: {
     rules: [
       {
-        test: /\.m?js$/,
+        test: /\.m?ts$/,
+        use: "ts-loader",
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"],
-          },
-        },
       },
     ],
   },
   resolve: {
-    extensions: [".mjs", ".js"],
+    extensions: [".mts", ".ts", ".js", ".mjs"],
+  },
+  output: {
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
   },
 };

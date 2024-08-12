@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Specify ECMAScript target version
+    "module": "ESNext", // Specify module code generation
+    "moduleResolution": "node", // Resolve modules using Node.js style
+    "esModuleInterop": true, // Enables interoperability between CommonJS and ES Modules
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file
+    "strict": true, // Enable all strict type-checking options
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "outDir": "./dist", // Redirect output structure to the directory
+    "rootDir": "./src", // Specify the root directory of input files
+    "declaration": true, // Generates corresponding .d.ts files
+    "declarationMap": true, // Generates a source map for each corresponding .d.ts file
+    "sourceMap": true // Generates corresponding .map files
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
